@@ -34,6 +34,6 @@ face_smile = smile.smilegen(hapiness, 30, 0, (-18 - hapiness),10)
 combined = mesh.Mesh(np.concatenate([face.data, eyeR.data, eyeL.data, eyeRpup.data, eyeLpup.data]))
 combined = mesh.Mesh(np.concatenate([combined.data, face_smile.data]))
 
-combined.save('test.stl')
+combined.save('mood.stl')
 
 
