@@ -1,0 +1,6 @@
+autotools-dev
+autoconf
+automake
+libtool
+libcurl
+grep libcurl
