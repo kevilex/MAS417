@@ -5,19 +5,18 @@ import smile
 import numpy as np
 from stl import mesh
 
-def run_cpp_thing():
+def cpp_extract():
 
-    proc = subprocess.Popen('./io',
+    proc = subprocess.Popen('./fetchfromapi',
                         shell=True,
                         stdout=subprocess.PIPE,
-                        stderr=subprocess.PIPE,
                         stdin=subprocess.PIPE)
 
     so, se = proc.communicate()
 
     return [int(x) for x in so.split()]
 
-hapiness = int(run_cpp_thing()[0])
+hapiness = int(cpp_extract()[0])
 
 face = circle.circlegen(32,50, 0, 0, 0)
 

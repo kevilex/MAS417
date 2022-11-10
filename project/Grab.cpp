@@ -23,7 +23,6 @@ int main(){
         tempint = -9;
     } else if(tempint>9){
         tempint = 9;
-    }
+    }   
     std::cout<<tempint;
-    return tempint;
 }
